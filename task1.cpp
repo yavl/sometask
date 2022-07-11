@@ -5,7 +5,7 @@
 namespace ImaginaryLibrary {
     std::string lowercased(const std::string& text) {
         std::string lowercased;
-        for (auto& character : text) {
+        for (const auto& character : text) {
             lowercased += std::tolower(character);
         }
         return lowercased;
